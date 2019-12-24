@@ -10,6 +10,7 @@ import {
 } from 'react-navigation-stack';
 import { List, Divider } from 'react-native-paper';
 
+import LaggyStack from './src/laggyExample/LaggyExample';
 import FullScreen from './src/FullScreen';
 import SimpleStack from './src/SimpleStack';
 import RevealStack from './src/RevealStack';
@@ -49,6 +50,7 @@ type Item = {
 };
 
 const data: Item[] = [
+  { component: LaggyStack, title: 'Laggy', routeName: 'LaggyStack' },
   { component: SimpleStack, title: 'Simple', routeName: 'SimpleStack' },
   { component: HeaderPreset, title: 'UIKit Preset', routeName: 'UIKit' },
   { component: RevealStack, title: 'Reveal Preset', routeName: 'Reveal' },
